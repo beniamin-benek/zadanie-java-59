@@ -14,7 +14,7 @@ class Main {
         Product product3 = new Product("Zeszyt", 3, "Zeszyt w kratkę.", category2);
 
         //produkt bez kategorii
-        Product product4 = new Product("Woda", 2, "Woda mineralna gazowana.", null);
+        Product product4 = new Product("Woda", 2, "Woda mineralna gazowana.");
 
         //oferta specjalna
         Date startDate1 = new Date(2019, 1, 14);

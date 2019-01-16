@@ -5,11 +5,18 @@ class Product {
     String productDescription;
     Category productCategory;
 
-    Product (String productName, double productPrice, String productDescription, Category productCategory/*, SpecialOffer specialOffer*/) {
+    Product (String productName, double productPrice, String productDescription, Category productCategory) {
         this.productName = productName;
         this.productPrice = productPrice;
         this.productDescription = productDescription;
         this.productCategory = productCategory;
+    }
+
+    //konstrukor do tworzenia produktu bez kategorii
+    Product (String productName, double productPrice, String productDescription) {
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productDescription = productDescription;
     }
 
     void printInfo() {
