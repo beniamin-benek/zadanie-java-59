@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Date;
 
 class Main {
@@ -17,9 +18,13 @@ class Main {
         Product product4 = new Product("Woda", 2, "Woda mineralna gazowana.");
 
         //oferta specjalna
-        Date startDate1 = new Date(2019, 1, 14);
-        Date endDate1 = new Date(2019,1,21);
-        SpecialOffer specialOffer1 = new SpecialOffer(product4, "Promocja na wodę.", startDate1, endDate1, 0.2);
+        //Date startDate1 = new Date(2019, 1, 14);
+        //Date endDate1 = new Date(2019,1,21);
+
+        LocalDate startDate = LocalDate.of(2019,1,14);
+        LocalDate endDate = LocalDate.of(2019,1,21);
+
+        SpecialOffer specialOffer1 = new SpecialOffer(product4, "Promocja na wodę.", startDate, endDate, 0.2);
 
         product1.printInfo();
         product2.printInfo();
